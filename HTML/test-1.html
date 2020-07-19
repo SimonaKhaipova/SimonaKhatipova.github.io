@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>My First Page</title>
+	<link rel="icon" type="image/png" href ="лис.png" />
+	<!--Ссылка на иконки-->
+	<link  href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet' crossorigin='anonymous'/>
+</head>
+	<body>
+
+		<!-- Хранение заголовков -->
+		<header>
+			<h1>Hi dear</h1>
+			<h5>вот и вот</h5>
+		</header>
+
+		<div id= 'media'>
+			<h2> Media files</h2>
+			<!--медиаданные-->
+			<figure>
+				<!--можно использовать только ширину, высота настроится авто 500px -->
+				<!-- или ширина 50% от ширины браузера-->
+				<img src="surf.jpg" width = "50%"alt = "Image of surf">
+
+				<figcaption>Amazing surfer doing the trick in the ocean</figcaption>
+				<br>
+
+				<!--Используем картинку из Font Awersome-->
+				<i class="fas fa-address-card fa-5x"></i><br>
+				<i class="fas fa-space-shuttle fa-5x"></i>
+				<br>
+				<!--похоже на кастомизацию изображения твиттера, которое не работает!-->
+				<span class="fa-stack fa-lg">
+	 				<i class="fa fa-square-o fa-stack-2x"></i>
+				    <i class="fa fa-twitter fa-stack-1x"></i>
+				</span>
+				твиттер в квадрате ага стопудова он так и отобразилсяы<br>
+				<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+				<span class="sr-only">Загрузка...</span>
+			</figure>
+		</div>
+
+		<div id= 'video'>
+			<h2> Videos</h2>
+			<!--autoplay после ширины ест много трафика, луше controls-->
+
+			<!--controls loop==autoplay-->
+			<video src= '' width="400" controls="" >Your browser does nit support the <code> viseo</code> element. </video>
+			<br>
+
+			<!--если использовать #t-15:35 это обрежет музон-->
+			<audio src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Clap_and_snare_loop_%28Carrai_Pass%29.wav' controls>Непонятная музычка с сайта</audio>
+		</div>
+
+
+		<div id = 'links'>
+			<h2> Links</h2>
+
+			<!--хранение ссылок внутри сайта navigation unordered list-->
+			<nav>
+				<ul>
+					<li><a href = 'page2.html'> переход хода</a></li>
+					<!--нельзя испоьзовать ссылки на определенный диск на своем локал компе типа Е:page, если другой путь указывать папку-->
+					<li><a href ='Owerview.html'> Страница побочная</a></li>
+					<li><a href = '#history'> история какая-то</a></li>
+					<li><a href = 'https://www.wikiwand.com/ru/Лисица'><img src = 'лис.png' width=150px alt = ' Вот тут уже интересно'/></a></li>
+					<li><a href="mailto:someone@example.com">Send email</a></li>
+					<li><button onclick="document.location='default.asp'">HTML Tutorial</button></li> <br>
+					<li><a href="#top">Top</a></li>
+					<li><a href="#bottom">Bottom</a></li> <br>
+
+					<li><a href="#media">Take me to the opening paragraph.</a></li>
+
+				</ul>
+			</nav>
+
+			<!--horizontal rule пустая линия разделения блоков-->	
+			<hr>
+
+
+
+			<br>
+			<a href = "http://www/twitter.com" aria-label="Twitter"><i class = "fab fa-message fa-5x"></i></a>
+			<br>
+		</div>
+			<!--табличка
+			th-table headings, tr-rows, td-data
+			rowspan - растянутость яцейки вниз
+			colspan- растянутость по столбам вбок-->
+		<table border="1">
+			<tr><th>Name</th><th>2nd name</th><th>birth year</th></tr>
+			<tr><td >Simona</td><td rowspan="3">Khatipov</td><td>1999</td></tr>
+			<tr><td >Irek</td><td>1957</td></tr>
+			<tr><td>Karina</td><td>1985</td></tr>
+		</table>
+
+		<br>
+		<!--показывать источник ссылку на автора цитаты-->
+		"Главное не только правильно, но и быстро"<blockquote>Папа</blockquote>
+
+		<!--адрес особо не форматируется отдельно, но помогает браузеру в поиске потом-->
+		<address> 
+
+		<main> 
+			<!--раскрывающийся список с подробнее-->
+			<summary>
+				вот это афигеть что тут
+				<details>раскрывающийся список через details
+				</details>	
+			</summary>
+			
+			<p>
+			<!--раскрывающаяся инфа  по заголовку из деталей-->
+			<details>
+				раскрывающийся список через summary
+				<summary>так раскроется по этому заголовку
+				</summary>
+			</details>
+			<hr> <!--линия горзонта-->
+			<span></span><br>
+
+			A reference  to my page <cite> https://vk.com/simonakhatipova</cite> <br>
+
+			<abbr new york police department>NYPD</abbr> <br>
+
+			Meet me at <time>9 p.m.</time> on the corner of 5th ave <br>
+
+			Вот немного кода тебе <code> x**2 for i in list if x<1</code> <br>
+			<!--формулы математические subscripts superscripts-->
+			(x+y)<sup>3</sup> <br>
+			H <sub>2</sub>O <br>
+
+			<button>Нажми сюда</button><br>
+			<!--типа результатов теста в шкале вау -->
+			<meter min="0" max="100" value="50">50%</meter><br>
+			<meter min="0" max="100" value="67.7">67.7%</meter><br>
+			<meter min="0" max="100" value="33">33%</meter><br>
+
+			вот это богически всегда хотела <br><progress value="3.75" max="5"> <br>
+
+			не отображается 	
+			<!--web page inside of the web page-->
+			<iframe src="https://vk.com/simonakhatipova" width="1200px" height="400px%"></iframe>
+
+			<bdo dir="rtl">This text will go right to left.</bdo>
+			<p><bdo dir="ltr">This text will go backward.</bdo></p>	
+
+					
+
+
+				
+		</main>	
+
+		<!-- содержит инфу внизу страницы -->
+		<footer>
+			<p> текст через параграф</p>
+			&copy; 2020 by me<br>
+			<a href="https://vk.com/simonakhatipova">My VK page</a>
+		</footer>
+			
+
+	</body>
+</html>
